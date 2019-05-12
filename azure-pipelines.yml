@@ -1,0 +1,17 @@
+strategy:
+  matrix:
+    Windows:
+      imageName: 'Windows-2019'
+
+trigger:
+- master
+
+pool:
+  vmImage: $(imageName)
+
+variables:
+  buildConfiguration: 'Release'
+
+steps:
+- script: dotnet build --configuration $(buildConfiguration)
+  displayName: 'dotnet build $(buildConfiguration)'
