@@ -26,6 +26,11 @@ namespace Microsoft.Store.PartnerCenter.Models.Users
         public string Id { get; set; }
 
         /// <summary>
+        /// Gets or sets the immutable identifier for the user.
+        /// </summary>
+        public string ImmutableId { get; set; }
+
+        /// <summary>
         /// Gets or sets the last directory sync time for the user.
         /// </summary>
         public DateTime? LastDirectorySyncTime { get; set; }
@@ -39,6 +44,11 @@ namespace Microsoft.Store.PartnerCenter.Models.Users
         /// Gets or sets the password profile.
         /// </summary>
         public PasswordProfile PasswordProfile { get; set; }
+
+        /// <summary>
+        /// Gets or sets the phone number.
+        /// </summary>
+        public string PhoneNumber { get; set; }
 
         /// <summary>
         /// Gets or sets the deleted time for the inactive user.
