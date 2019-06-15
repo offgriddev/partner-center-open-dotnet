@@ -44,7 +44,7 @@ namespace Microsoft.Store.PartnerCenter.Models.ServiceCosts
         /// <summary>
         /// Gets or sets the service costs summary details.
         /// </summary>
-        public IEnumerable<ServiceCostsSummary> Details { get; set; }
+        public IEnumerable<ServiceCostsSummaryDetail> Details { get; set; }
 
         /// <summary>
         /// Gets or sets the pre tax total of costs of the customer.

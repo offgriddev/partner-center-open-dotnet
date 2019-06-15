@@ -22,6 +22,16 @@ namespace Microsoft.Store.PartnerCenter.Models.Invoices
         public IEnumerable<Invoice> Amendments { get; set; }
 
         /// <summary>
+        /// Gets or sets the billing period end date in UTC.
+        /// </summary>
+        public DateTime BillingPeriodEndDate { get; set; }
+
+        /// <summary>
+        /// Gets or sets the billing period start date in UTC.
+        /// </summary>
+        public DateTime BillingPeriodStartDate { get; set; }
+
+        /// <summary>
         /// Gets or sets the currency used for all invoice item amounts and totals.
         /// </summary>
         public string CurrencyCode { get; set; }
