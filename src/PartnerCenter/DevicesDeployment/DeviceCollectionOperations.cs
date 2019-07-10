@@ -6,6 +6,7 @@ namespace Microsoft.Store.PartnerCenter.DevicesDeployment
     using System;
     using System.Collections.Generic;
     using System.Globalization;
+    using System.Net.Http;
     using System.Threading;
     using System.Threading.Tasks;
     using Extensions;
@@ -51,14 +52,14 @@ namespace Microsoft.Store.PartnerCenter.DevicesDeployment
         /// <summary>
         /// Adds devices to existing devices batch.
         /// </summary>
-        /// <param name="newDevices">The new devices to be created.</param>
+        /// <param name="newEntity">The new devices to be created.</param>
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>The location which indicates the URL of the API to query for status of the create request.</returns>
         public async Task<string> CreateAsync(IEnumerable<Device> newEntity, CancellationToken cancellationToken = default)
         {
             newEntity.AssertNotNull(nameof(newEntity));
 
-            return await Partner.ServiceClient.PostAsync<IEnumerable<Device>, string>(
+            HttpResponseMessage response = await Partner.ServiceClient.PostAsync<IEnumerable<Device>, HttpResponseMessage>(
                 new Uri(
                     string.Format(
                         CultureInfo.InvariantCulture,
@@ -68,6 +69,8 @@ namespace Microsoft.Store.PartnerCenter.DevicesDeployment
                     UriKind.Relative),
                 newEntity,
                 cancellationToken).ConfigureAwait(false);
+
+            return response.Headers.Location != null ? response.Headers.Location.ToString() : string.Empty;
         }
 
         /// <summary>
