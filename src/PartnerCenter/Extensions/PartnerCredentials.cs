@@ -27,7 +27,7 @@ namespace Microsoft.Store.PartnerCenter.Extensions
             clientId.AssertNotEmpty(nameof(clientId));
             applicationSecret.AssertNotEmpty(nameof(applicationSecret));
             aadApplicationDomain.AssertNotEmpty(nameof(aadApplicationDomain));
- 
+
             ApplicationPartnerCredentials partnerCredentials = new ApplicationPartnerCredentials(
                 clientId,
                 applicationSecret,

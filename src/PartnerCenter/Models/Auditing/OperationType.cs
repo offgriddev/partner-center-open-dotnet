@@ -206,6 +206,11 @@ namespace Microsoft.Store.PartnerCenter.Models.Auditing
         /// <summary>
         /// An agreement has been created
         /// </summary>
-        CreateAgreement = 38
+        CreateAgreement = 38,
+
+        /// <summary>
+        /// Extend a relationship from an indirect partner to an indirect provider.
+        /// </summary>
+        ExtendRelationship = 39
     }
 }

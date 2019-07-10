@@ -64,7 +64,7 @@ namespace Microsoft.Store.PartnerCenter.CustomerDirectoryRoles
                     string.Format(
                         CultureInfo.InvariantCulture,
                         $"/{PartnerService.Instance.ApiVersion}/{PartnerService.Instance.Configuration.Apis.AddUserToCustomerDirectoryRole.Path}",
-                        Context.Item1, 
+                        Context.Item1,
                         Context.Item2),
                     UriKind.Relative),
                 newEntity,
@@ -81,9 +81,9 @@ namespace Microsoft.Store.PartnerCenter.CustomerDirectoryRoles
             return await Partner.ServiceClient.GetAsync<SeekBasedResourceCollection<UserMember>>(
                 new Uri(
                     string.Format(
-                        CultureInfo.InvariantCulture, 
-                        $"/{PartnerService.Instance.ApiVersion}/{PartnerService.Instance.Configuration.Apis.GetCustomerDirectoryRoleUserMembers.Path}", 
-                        Context.Item1, 
+                        CultureInfo.InvariantCulture,
+                        $"/{PartnerService.Instance.ApiVersion}/{PartnerService.Instance.Configuration.Apis.GetCustomerDirectoryRoleUserMembers.Path}",
+                        Context.Item1,
                         Context.Item2),
                     UriKind.Relative),
                 new ResourceCollectionConverter<UserMember>(),
@@ -145,9 +145,9 @@ namespace Microsoft.Store.PartnerCenter.CustomerDirectoryRoles
 
             return await Partner.ServiceClient.GetAsync<SeekBasedResourceCollection<UserMember>>(
                 new Uri(
-                    string.Format(CultureInfo.InvariantCulture, 
-                    $"/{PartnerService.Instance.ApiVersion}/{PartnerService.Instance.Configuration.Apis.GetCustomerDirectoryRoleUserMembers.Path}", 
-                    Context.Item1, 
+                    string.Format(CultureInfo.InvariantCulture,
+                    $"/{PartnerService.Instance.ApiVersion}/{PartnerService.Instance.Configuration.Apis.GetCustomerDirectoryRoleUserMembers.Path}",
+                    Context.Item1,
                     Context.Item2),
                     UriKind.Relative),
                 headers,

@@ -15,7 +15,7 @@ namespace Microsoft.Store.PartnerCenter.Models.Licenses
         /// </summary>
         public SubscribedSku()
         {
-            ServicePlans = new List<ServicePlan>(); 
+            ServicePlans = new List<ServicePlan>();
         }
 
         /// <summary>

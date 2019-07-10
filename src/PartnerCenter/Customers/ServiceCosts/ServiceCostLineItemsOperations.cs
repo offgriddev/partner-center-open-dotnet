@@ -40,7 +40,7 @@ namespace Microsoft.Store.PartnerCenter.Customers.ServiceCosts
                     string.Format(
                         CultureInfo.InvariantCulture,
                         $"/{PartnerService.Instance.ApiVersion}/{PartnerService.Instance.Configuration.Apis.GetCustomerServiceCostLineItems.Path}",
-                        Context.Item1, 
+                        Context.Item1,
                         Context.Item2.ToString()),
                     UriKind.Relative),
                 new ResourceCollectionConverter<ServiceCostLineItem>(),

@@ -15,7 +15,7 @@ namespace Microsoft.Store.PartnerCenter.Models
         /// Gets the headers associated with this link.
         /// </summary>
         public IEnumerable<KeyValuePair<string, string>> Headers { get; private set; }
-        
+
         /// <summary>
         /// Gets the HTTP method used by this link.
         /// </summary>

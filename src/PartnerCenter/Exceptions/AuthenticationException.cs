@@ -22,7 +22,7 @@ namespace Microsoft.Store.PartnerCenter.Exceptions
         /// The error code encountering when authenticating.
         /// </summary>
         [NonSerialized]
-        private readonly string errorCode; 
+        private readonly string errorCode;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="AuthenticationException" /> class.

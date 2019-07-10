@@ -43,7 +43,7 @@ namespace Microsoft.Store.PartnerCenter.Relationships
                         $"/{PartnerService.Instance.ApiVersion}/{PartnerService.Instance.Configuration.Apis.GetPartnerRelationshipsForCustomer.Path}",
                         Context),
                     UriKind.Relative),
-                new ResourceCollectionConverter<PartnerRelationship>(), 
+                new ResourceCollectionConverter<PartnerRelationship>(),
                 cancellationToken).ConfigureAwait(false);
         }
     }

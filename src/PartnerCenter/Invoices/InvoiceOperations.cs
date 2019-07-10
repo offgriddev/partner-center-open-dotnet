@@ -54,7 +54,7 @@ namespace Microsoft.Store.PartnerCenter.Invoices
         /// <returns>The recon line item collection operations.</returns>
         public IReconciliationLineItemCollection By(BillingProvider provider, InvoiceLineItemType invoiceLineItemType, string currencyCode, BillingPeriod period, int? size = null)
             => new ReconciliationLineItemCollectionOperations(Partner, Context, provider, invoiceLineItemType, currencyCode, period, size);
-     
+
         /// <summary>
         /// Retrieves information about a specific invoice.
         /// </summary>

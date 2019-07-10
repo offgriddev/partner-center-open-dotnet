@@ -45,9 +45,9 @@ namespace Microsoft.Store.PartnerCenter.CustomerUsers
             return await Partner.ServiceClient.PostAsync<LicenseUpdate, LicenseUpdate>(
                 new Uri(
                     string.Format(
-                        CultureInfo.InvariantCulture, 
+                        CultureInfo.InvariantCulture,
                         $"/{PartnerService.Instance.ApiVersion}/{PartnerService.Instance.Configuration.Apis.SetCustomerUserLicenseUpdates.Path}",
-                        Context.Item1, 
+                        Context.Item1,
                         Context.Item2),
                     UriKind.Relative),
                 newEntity,

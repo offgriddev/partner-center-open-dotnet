@@ -86,12 +86,12 @@ namespace Microsoft.Store.PartnerCenter.Models.Invoices
         /// This link auto expires in 30 minutes.
         /// </remarks>
         public Uri PdfDownloadLink { get; set; }
-        
+
         /// <summary>
         /// Gets or sets the invoice tax receipts
         /// </summary>
         public IEnumerable<TaxReceipt> TaxReceipts { get; set; }
-        
+
         /// <summary>
         /// Gets or sets the total charges in this invoice.
         /// </summary>

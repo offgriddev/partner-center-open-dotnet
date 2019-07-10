@@ -358,7 +358,7 @@ namespace Microsoft.Store.PartnerCenter.Customers
         /// <summary>
         /// Removes the relationship between the partner and customer when RelationshipToPartner == CustomerPartnerRelationship.None.
         /// </summary>
-        /// <param name="customer">A customer with RelationshipToPartner == CustomerPartnerRelationship.None.</param>
+        /// <param name="entity">A customer with RelationshipToPartner == CustomerPartnerRelationship.None.</param>
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>The customer information.</returns>
         public async Task<Customer> PatchAsync(Customer entity, CancellationToken cancellationToken = default)

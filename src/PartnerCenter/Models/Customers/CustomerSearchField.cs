@@ -16,12 +16,12 @@ namespace Microsoft.Store.PartnerCenter.Models.Customers
         /// Customer company name.
         /// </summary>
         CompanyName,
-        
+
         /// <summary>
         /// Customer domain name.
         /// </summary>
         Domain,
-        
+
         /// <summary>
         /// The indirect reseller
         /// </summary>

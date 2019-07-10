@@ -35,7 +35,7 @@ namespace Microsoft.Store.PartnerCenter.ServiceRequests
                 new Uri(
                   $"/{PartnerService.Instance.ApiVersion}/{PartnerService.Instance.Configuration.Apis.GetServiceRequestSupportTopics.Path}",
                   UriKind.Relative),
-                new ResourceCollectionConverter<SupportTopic>(), 
+                new ResourceCollectionConverter<SupportTopic>(),
                 cancellationToken).ConfigureAwait(false);
         }
     }

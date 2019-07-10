@@ -61,7 +61,7 @@ namespace Microsoft.Store.PartnerCenter.Subscriptions
                     string.Format(
                         CultureInfo.InvariantCulture,
                         $"/{PartnerService.Instance.ApiVersion}/{PartnerService.Instance.Configuration.Apis.UpdateSubscriptionSupportContact.Path}",
-                        Context.Item1, 
+                        Context.Item1,
                         Context.Item2),
                     UriKind.Relative),
                 entity,

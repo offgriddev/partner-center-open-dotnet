@@ -21,12 +21,12 @@ namespace Microsoft.Store.PartnerCenter.Models.Incidents
         /// Informational status.
         /// </summary>
         Information,
-        
+
         /// <summary>
         /// Warning status.
         /// </summary>
         Warning,
-        
+
         /// <summary>
         /// Critical status.
         /// </summary>

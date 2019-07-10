@@ -8,7 +8,7 @@
     <Copyright>Copyright © 2019</Copyright>
     <NeutralLanguage>en-US</NeutralLanguage>
     <Product>Microsoft Partner Center</Product>
-    <Version>1.13.2</Version>
+    <Version>1.13.3</Version>
     <PackageProjectUrl>https://github.com/isaiahwilliams/partner-center-open-dotnet</PackageProjectUrl>
     <RepositoryUrl>https://github.com/isaiahwilliams/partner-center-open-dotnet.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
@@ -17,6 +17,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Description>Unofficial version of the Partner Center .NET SDK. This package is not affiliated with or supported by Microsoft.</Description>
     <PackageId>PartnerCenter.DotNet</PackageId>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
@@ -33,10 +34,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.2">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference>
     <PackageReference Include="Microsoft.CSharp" Version="4.5.0" />
     <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="3.19.8" />
     <PackageReference Include="Microsoft.Rest.ClientRuntime" Version="2.3.19" />

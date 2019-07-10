@@ -18,7 +18,7 @@ namespace Microsoft.Store.PartnerCenter.Models.Auditing
         Undefined = 0,
 
         /// <summary>
-        /// Customer Resource
+        /// Customer resource
         /// </summary>
         Customer = 1,
 
@@ -28,17 +28,17 @@ namespace Microsoft.Store.PartnerCenter.Models.Auditing
         CustomerUser = 2,
 
         /// <summary>
-        /// Order Resource
+        /// Order resource
         /// </summary>
         Order = 3,
 
         /// <summary>
-        /// Subscription Resource
+        /// Subscription resource
         /// </summary>
         Subscription = 4,
 
         /// <summary>
-        /// License Resource
+        /// License resource
         /// </summary>
         License = 5,
 
@@ -48,63 +48,68 @@ namespace Microsoft.Store.PartnerCenter.Models.Auditing
         ThirdPartyAddOn = 6,
 
         /// <summary>
-        /// MPN association Resource
+        /// MPN association resource
         /// </summary>
         MpnAssociation = 7,
 
         /// <summary>
-        /// Transfer Resource
+        /// Transfer resource
         /// </summary>
         Transfer = 8,
 
         /// <summary>
-        /// Application Resource
+        /// Application resource
         /// </summary>
         Application = 9,
 
         /// <summary>
-        /// Application Credential Resource
+        /// Application Credential resource
         /// </summary>
         ApplicationCredential = 10,
 
         /// <summary>
-        /// Partner User Resource
+        /// Partner User resource
         /// </summary>
         PartnerUser = 11,
 
         /// <summary>
-        /// Partner Relationship Resource
+        /// Partner Relationship resource
         /// </summary>
         PartnerRelationship = 12,
 
         /// <summary>
-        /// Partner Referral Resource
+        /// Partner Referral resource
         /// </summary>
         Referral = 13,
 
         /// <summary>
-        /// Software Key Resource
+        /// Software Key resource
         /// </summary>
         SoftwareKey = 14,
 
         /// <summary>
-        /// Software Download Link Resource
+        /// Software Download Link resource
         /// </summary>
         SoftwareDownloadLink = 15,
 
         /// <summary>
-        /// Credit Limit Resource
+        /// Credit Limit resource
         /// </summary>
         CreditLimit = 16,
 
         /// <summary>
-        /// Invoice Resource
+        /// Invoice resource
         /// </summary>
         Invoice = 17,
 
         /// <summary>
-        /// Agreement Resource
+        /// Agreement resource
         /// </summary>
-        Agreement = 18
+        Agreement = 18,
+
+        /// <summary>
+        /// Partner to customer relationship resource
+        /// </summary>
+        PartnerCustomerRelationship = 19
     }
 }

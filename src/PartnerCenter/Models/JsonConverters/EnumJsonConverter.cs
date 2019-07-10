@@ -46,8 +46,8 @@ namespace Microsoft.Store.PartnerCenter.Models.JsonConverters
             {
                 throw new JsonSerializationException(
                     string.Format(
-                        CultureInfo.InvariantCulture, 
-                        "EnumJsonConverter cannot deserialize '{0}' values", 
+                        CultureInfo.InvariantCulture,
+                        "EnumJsonConverter cannot deserialize '{0}' values",
                         objectType.Name));
             }
 

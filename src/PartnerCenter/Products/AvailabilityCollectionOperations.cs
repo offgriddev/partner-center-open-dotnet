@@ -80,7 +80,7 @@ namespace Microsoft.Store.PartnerCenter.Products
                 new Uri(
                     string.Format(CultureInfo.InvariantCulture,
                         $"/{PartnerService.Instance.ApiVersion}/{PartnerService.Instance.Configuration.Apis.GetAvailabilities.Path}",
-                        Context.Item1, 
+                        Context.Item1,
                         Context.Item2),
                     UriKind.Relative),
                 parameters,

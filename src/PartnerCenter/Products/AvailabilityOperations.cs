@@ -52,8 +52,8 @@ namespace Microsoft.Store.PartnerCenter.Products
                 new Uri(
                     string.Format(CultureInfo.InvariantCulture,
                         $"/{PartnerService.Instance.ApiVersion}/{PartnerService.Instance.Configuration.Apis.GetAvailability.Path}",
-                        Context.Item1, 
-                        Context.Item2, 
+                        Context.Item1,
+                        Context.Item2,
                         Context.Item3),
                     UriKind.Relative),
                 parameters,

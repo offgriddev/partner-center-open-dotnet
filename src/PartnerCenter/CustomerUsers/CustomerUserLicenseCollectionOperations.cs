@@ -56,7 +56,7 @@ namespace Microsoft.Store.PartnerCenter.CustomerUsers
                     string.Format(
                         CultureInfo.InvariantCulture,
                         $"/{PartnerService.Instance.ApiVersion}/{PartnerService.Instance.Configuration.Apis.GetCustomerUserAssignedLicenses.Path}",
-                        Context.Item1, 
+                        Context.Item1,
                         Context.Item2),
                     UriKind.Relative),
                 parameters,

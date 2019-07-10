@@ -40,7 +40,7 @@ namespace Microsoft.Store.PartnerCenter.ServiceRequests
                     string.Format(
                         CultureInfo.InvariantCulture,
                         $"/{PartnerService.Instance.ApiVersion}/{PartnerService.Instance.Configuration.Apis.GetServiceRequestCustomer.Path}",
-                        Context.Item1, 
+                        Context.Item1,
                         Context.Item2),
                     UriKind.Relative),
                 cancellationToken).ConfigureAwait(false);
@@ -61,7 +61,7 @@ namespace Microsoft.Store.PartnerCenter.ServiceRequests
                     string.Format(
                         CultureInfo.InvariantCulture,
                         $"/{PartnerService.Instance.ApiVersion}/{PartnerService.Instance.Configuration.Apis.UpdateServiceRequestCustomer.Path}",
-                        Context.Item1, 
+                        Context.Item1,
                         Context.Item2),
                     UriKind.Relative),
                 entity,

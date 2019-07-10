@@ -30,7 +30,7 @@ namespace Microsoft.Store.PartnerCenter.Subscriptions
         {
             customerId.AssertNotEmpty(nameof(customerId));
 
-            usageRecords = new Lazy<ISubscriptionMonthlyUsageRecordCollection>((Func<ISubscriptionMonthlyUsageRecordCollection>)(() => (ISubscriptionMonthlyUsageRecordCollection)new SubscriptionMonthlyUsageRecordCollectionOperations(Partner, Context)));
+            usageRecords = new Lazy<ISubscriptionMonthlyUsageRecordCollection>(() => new SubscriptionMonthlyUsageRecordCollectionOperations(Partner, Context));
         }
 
         /// <summary>

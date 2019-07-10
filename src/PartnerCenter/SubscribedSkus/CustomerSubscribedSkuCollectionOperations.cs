@@ -56,7 +56,7 @@ namespace Microsoft.Store.PartnerCenter.SubscribedSkus
                         $"/{PartnerService.Instance.ApiVersion}/{PartnerService.Instance.Configuration.Apis.GetCustomerSubscribedSkus.Path}",
                         Context),
                     UriKind.Relative),
-                parameters, 
+                parameters,
                 new ResourceCollectionConverter<SubscribedSku>(),
                 cancellationToken).ConfigureAwait(false);
         }

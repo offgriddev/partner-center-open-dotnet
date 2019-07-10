@@ -122,7 +122,7 @@ namespace Microsoft.Store.PartnerCenter.Utilization
                     string.Format(
                         CultureInfo.InvariantCulture,
                         $"/{PartnerService.Instance.ApiVersion}/{PartnerService.Instance.Configuration.Apis.SeekAzureUtilizationRecords.Path}",
-                        Context.Item1, 
+                        Context.Item1,
                         Context.Item2),
                     UriKind.Relative),
                 headers,

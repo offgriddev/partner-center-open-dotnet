@@ -32,7 +32,7 @@ namespace Microsoft.Store.PartnerCenter.Orders
         /// <summary>
         /// Gets order activation link collection operations.
         /// </summary>
-        public IOrderActivationLinkCollection OrderActivationLinks => new OrderActivationLinkCollectionOperations(Partner, Context.Item1, Context.Item2); 
+        public IOrderActivationLinkCollection OrderActivationLinks => new OrderActivationLinkCollectionOperations(Partner, Context.Item1, Context.Item2);
 
         /// <summary>
         /// Gets line item collection operations.

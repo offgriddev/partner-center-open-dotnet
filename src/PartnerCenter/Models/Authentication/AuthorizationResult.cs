@@ -75,7 +75,7 @@ namespace Microsoft.Store.PartnerCenter.Models.Authentication
             {
                 // RemoveAccount the leading '?' first
                 NameValueCollection parameters = HttpUtility.ParseQueryString(resultData.Substring(1));
-                Dictionary<string, string> response = parameters.AllKeys.ToDictionary(k => k, k => parameters[k]); 
+                Dictionary<string, string> response = parameters.AllKeys.ToDictionary(k => k, k => parameters[k]);
 
                 if (response.ContainsKey("state"))
                 {

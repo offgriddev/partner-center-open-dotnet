@@ -30,7 +30,7 @@ namespace Microsoft.Store.PartnerCenter.Products
         {
             targetView.AssertNotEmpty(nameof(targetView));
             country.AssertNotEmpty(nameof(country));
-            targetSegment.AssertNotEmpty(nameof(targetSegment)); 
+            targetSegment.AssertNotEmpty(nameof(targetSegment));
         }
 
         /// <summary>

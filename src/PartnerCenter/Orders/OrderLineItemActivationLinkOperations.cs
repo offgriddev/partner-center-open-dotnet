@@ -43,7 +43,7 @@ namespace Microsoft.Store.PartnerCenter.Orders
                         CultureInfo.InvariantCulture,
                         $"/{PartnerService.Instance.ApiVersion}/{PartnerService.Instance.Configuration.Apis.GetActivationLinksByLineItemNumber.Path}",
                         Context.Item1,
-                        Context.Item2, 
+                        Context.Item2,
                         Context.Item3),
                     UriKind.Relative),
                 cancellationToken).ConfigureAwait(false);

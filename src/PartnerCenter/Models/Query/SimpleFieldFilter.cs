@@ -21,7 +21,7 @@ namespace Microsoft.Store.PartnerCenter.Models.Query
         {
             field.AssertNotEmpty(nameof(field));
             value.AssertNotEmpty(nameof(value));
-     
+
             Field = field;
             Value = value;
             Operator = operation;

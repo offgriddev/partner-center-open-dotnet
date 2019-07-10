@@ -56,7 +56,7 @@ namespace Microsoft.Store.PartnerCenter.Customers.Products
                         CultureInfo.InvariantCulture,
                         $"/{PartnerService.Instance.ApiVersion}/{PartnerService.Instance.Configuration.Apis.GetCustomerSku.Path}",
                         Context.Item1,
-                        Context.Item2, 
+                        Context.Item2,
                         Context.Item3),
                     UriKind.Relative),
                 cancellationToken).ConfigureAwait(false);

@@ -46,7 +46,7 @@ namespace Microsoft.Store.PartnerCenter.Profiles
             legalBusinessProfile = new Lazy<ILegalBusinessProfile>(() => new LegalBusinessProfileOperations(Partner));
             mpnProfileOperations = new Lazy<IMpnProfile>(() => new MpnProfileOperations(Partner));
             organizationProfile = new Lazy<IOrganizationProfile>(() => new OrganizationProfileOperations(Partner));
-            supportProfileOperations = new Lazy<ISupportProfile>((Func<ISupportProfile>)(() => (ISupportProfile)new SupportProfileOperations(Partner)));
+            supportProfileOperations = new Lazy<ISupportProfile>(() => new SupportProfileOperations(Partner));
         }
 
         /// <summary>

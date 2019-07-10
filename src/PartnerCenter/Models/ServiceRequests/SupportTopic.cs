@@ -7,7 +7,7 @@ namespace Microsoft.Store.PartnerCenter.Models.ServiceRequests
     /// Represents a service request support topic.
     /// </summary>
     public sealed class SupportTopic : ResourceBase
-    {   
+    {
         /// <summary>
         /// Gets or sets the description of the support topic.
         /// </summary>

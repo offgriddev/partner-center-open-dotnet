@@ -51,7 +51,7 @@ namespace Microsoft.Store.PartnerCenter.Models.Orders
         /// This information will not be returned unless explicitly requested. 
         /// </remarks>
         public Pricing Pricing { get; set; }
-        
+
         /// <summary>
         /// Gets or sets the provisioning context for the offer.
         /// </summary>
@@ -61,7 +61,7 @@ namespace Microsoft.Store.PartnerCenter.Models.Orders
         /// Gets or sets the product quantity.
         /// </summary>
         public int Quantity { get; set; }
-        
+
         /// <summary>
         /// Gets or sets the resulting subscription identifier.
         /// </summary>
