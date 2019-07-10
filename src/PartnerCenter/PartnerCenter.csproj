@@ -8,7 +8,7 @@
     <Copyright>Copyright © 2019</Copyright>
     <NeutralLanguage>en-US</NeutralLanguage>
     <Product>Microsoft Partner Center</Product>
-    <Version>1.13.3</Version>
+    <Version>1.13.3.1</Version>
     <PackageProjectUrl>https://github.com/isaiahwilliams/partner-center-open-dotnet</PackageProjectUrl>
     <RepositoryUrl>https://github.com/isaiahwilliams/partner-center-open-dotnet.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>

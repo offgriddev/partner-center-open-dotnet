@@ -5,6 +5,7 @@ namespace Microsoft.Store.PartnerCenter.DevicesDeployment
 {
     using System;
     using System.Globalization;
+    using System.Net.Http;
     using System.Threading;
     using System.Threading.Tasks;
     using Extensions;
@@ -55,7 +56,7 @@ namespace Microsoft.Store.PartnerCenter.DevicesDeployment
         {
             newEntity.AssertNotNull(nameof(newEntity));
 
-            return await Partner.ServiceClient.PostAsync<DeviceBatchCreationRequest, string>(
+            HttpResponseMessage response = await Partner.ServiceClient.PostAsync<DeviceBatchCreationRequest, HttpResponseMessage>(
                 new Uri(
                     string.Format(
                         CultureInfo.InvariantCulture,
@@ -64,6 +65,8 @@ namespace Microsoft.Store.PartnerCenter.DevicesDeployment
                     UriKind.Relative),
                 newEntity,
                 cancellationToken).ConfigureAwait(false);
+
+            return response.Headers.Location != null ? response.Headers.Location.ToString() : string.Empty;
         }
 
         /// <summary>

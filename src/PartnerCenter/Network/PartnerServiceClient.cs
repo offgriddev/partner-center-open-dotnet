@@ -961,6 +961,11 @@ namespace Microsoft.Store.PartnerCenter.Network
 
             if (response.IsSuccessStatusCode)
             {
+                if (typeof(TResource) == typeof(HttpResponseMessage))
+                {
+                    return (TResource)Convert.ChangeType(response, typeof(TResource));
+                }
+
                 if (string.IsNullOrEmpty(content))
                 {
                     content = string.Empty;
