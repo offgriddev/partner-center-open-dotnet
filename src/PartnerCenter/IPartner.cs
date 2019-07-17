@@ -20,6 +20,7 @@ namespace Microsoft.Store.PartnerCenter
     using RateCards;
     using Relationships;
     using RequestContext;
+    using Roles;
     using ServiceRequests;
     using Usage;
     using ValidationRules;
@@ -115,6 +116,11 @@ namespace Microsoft.Store.PartnerCenter
         /// Gets the partner context.
         /// </summary>
         IRequestContext RequestContext { get; }
+
+        /// <summary>
+        /// Gets the role collection operations available to the partner.
+        /// </summary>
+        IRoleCollection Roles { get; }
 
         /// <summary>
         /// Gets the partner service client.
