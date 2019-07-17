@@ -3,11 +3,18 @@
 
 namespace Microsoft.Store.PartnerCenter.Models.Products
 {
+    using System.Collections.Generic;
+
     /// <summary>
     /// Represents the terms for an availability.
     /// </summary>
     public sealed class AvailabilityTerm
     {
+        /// <summary>
+        /// Gets or sets the cancellation policies that can apply to this term.
+        /// </summary>
+        public IEnumerable<CancellationPolicy> CancellationPolicies { get; set; }
+
         /// <summary>
         /// Gets or sets the description for the term.
         /// </summary>
@@ -18,5 +25,10 @@ namespace Microsoft.Store.PartnerCenter.Models.Products
         /// </summary>
         /// <remarks>Example: P1M, P1Y, P3Y</remarks>
         public string Duration { get; set; }
+
+        /// <summary>
+        /// Gets or sets the renewal options.
+        /// </summary>
+        public IEnumerable<RenewalOption> RenewalOptions { get; set; }
     }
 }

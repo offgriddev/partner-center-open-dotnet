@@ -63,6 +63,11 @@ namespace Microsoft.Store.PartnerCenter.Models.Orders
         public int Quantity { get; set; }
 
         /// <summary>
+        /// Gets or sets the renews to value.
+        /// </summary>
+        public RenewsTo RenewsTo { get; set; }
+
+        /// <summary>
         /// Gets or sets the resulting subscription identifier.
         /// </summary>
         public string SubscriptionId { get; set; }

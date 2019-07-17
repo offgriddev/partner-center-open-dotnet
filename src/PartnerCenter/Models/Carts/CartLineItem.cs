@@ -75,6 +75,11 @@ namespace Microsoft.Store.PartnerCenter.Models.Carts
         public int Quantity { get; set; }
 
         /// <summary>
+        /// Gets or sets the renews to value.
+        /// </summary>
+        public RenewsTo RenewsTo { get; set; }
+
+        /// <summary>
         /// Gets or sets the term duration if applicable.
         /// </summary>
         public string TermDuration { get; set; }

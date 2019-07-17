@@ -130,6 +130,11 @@ namespace Microsoft.Store.PartnerCenter.Models.Subscriptions
         public int Quantity { get; set; }
 
         /// <summary>
+        /// Gets or sets the renewal term duration.
+        /// </summary>
+        public string RenewalTermDuration { get; set; }
+
+        /// <summary>
         /// Gets or sets the status of the subscription.
         /// </summary>
         public SubscriptionStatus Status { get; set; }
