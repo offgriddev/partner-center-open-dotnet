@@ -74,7 +74,7 @@ namespace Microsoft.Store.PartnerCenter.CustomerUsers
         /// Gets all the customer users.
         /// </summary>
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
-        /// <returns>All the customer orders.</returns>
+        /// <returns>All users that belong to the customer..</returns>
         public async Task<SeekBasedResourceCollection<CustomerUser>> GetAsync(CancellationToken cancellationToken = default)
         {
             return await Partner.ServiceClient.GetAsync<SeekBasedResourceCollection<CustomerUser>>(

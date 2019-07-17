@@ -256,6 +256,16 @@
         "userId": "userId"
       }
     },
+    "GetPartnerRoles": {
+      "Path": "roles",
+      "Parameters": {
+        "RoleId": "role_id",
+        "SeekOperation": "seekOperation",
+        "SortDirection": "sortDirection",
+        "SortField": "sortField",
+        "Size": "size"
+      }
+    },
     "CustomerUserDirectoryRoles": {
       "Path": "customers/{0}/users/{1}/directoryroles",
       "Parameters": {

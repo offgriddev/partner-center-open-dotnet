@@ -22,6 +22,7 @@ namespace Microsoft.Store.PartnerCenter
     using RateCards;
     using Relationships;
     using RequestContext;
+    using Roles;
     using ServiceRequests;
     using Usage;
     using ValidationRules;
@@ -108,6 +109,11 @@ namespace Microsoft.Store.PartnerCenter
         private readonly Lazy<IRelationshipCollection> relationships;
 
         /// <summary>
+        /// Provide access to the role collection operations.
+        /// </summary>
+        private readonly Lazy<IRoleCollection> roles;
+
+        /// <summary>
         /// Provides access to the service incident collection operations.
         /// </summary>
         private readonly Lazy<IServiceIncidentCollection> serviceIncidents;
@@ -147,6 +153,7 @@ namespace Microsoft.Store.PartnerCenter
             profiles = new Lazy<IPartnerProfileCollection>(() => new PartnerProfileCollectionOperations(this));
             rateCards = new Lazy<IRateCardCollection>(() => new RateCardCollectionOperations(this));
             relationships = new Lazy<IRelationshipCollection>(() => new RelationshipCollectionOperations(this));
+            roles = new Lazy<IRoleCollection>(() => new RoleCollectionOperations(this));
             serviceIncidents = new Lazy<IServiceIncidentCollection>(() => new ServiceIncidentCollectionOperations(this));
             serviceRequests = new Lazy<IPartnerServiceRequestCollection>(() => new PartnerServiceRequestCollectionOperations(this));
             usage = new Lazy<IPartnerUsageSummary>(() => new PartnerUsageSummaryOperations(this));
@@ -286,6 +293,11 @@ namespace Microsoft.Store.PartnerCenter
         /// Gets the partner context.
         /// </summary>
         public IRequestContext RequestContext { get; private set; }
+
+        /// <summary>
+        /// Gets the role collection operations available to the partner.
+        /// </summary>
+        public IRoleCollection Roles => roles.Value;
 
         /// <summary>
         /// Gets the partner service client.
